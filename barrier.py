@@ -1,5 +1,5 @@
 import numpy as np
-import random
+from random import random
 import electron
 
 class Barrier:
@@ -15,7 +15,7 @@ class Barrier:
             k = np.sqrt(2*elec.m*(self.U0 - elec.ke)) / self.h_bar
             p = np.exp(-2*k*self.L)
             #print(p)
-            num = random.random()
+            num = random()
             if num > p:
                 return False
         return True
