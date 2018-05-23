@@ -9,13 +9,11 @@ class Electron:
         self.m = mass
         self.pos = position
         mag = np.sqrt(2 * energy/self.m)#gets magnitude of velocity
-        n = len(mag)
-        self.vel = np.full((n,2),1)
+        #n = len(mag)
+        self.vel = direction*mag
         
-        for i in range (0, n):
-            self.vel[i] = direction[i] * mag[i]
-        
-        #self.vel = mag * direction
+        #for i in range (0, n):
+            #self.vel[i] = direction[i] * mag[i]
         
         self.p = self.m * mag
         self.wvlen = self.h/self.p
