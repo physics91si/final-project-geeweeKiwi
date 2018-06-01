@@ -8,6 +8,8 @@ class Electron:
         self.h = 6.62607004 * (10**-34)
         self.m = mass
         self.pos = position
+        self.t = 0
+        self.tf = 0
         mag = np.sqrt(2 * energy/self.m)#gets magnitude of velocity
         #n = len(mag)
         self.vel = direction*mag
