@@ -150,7 +150,6 @@ def run_dynamics(n, dt, num, height, E_max, E_min, barr, mass, xlim=(0, 1), ylim
         elecs_xpos.append(e.pos[0])
         elecs_ypos.append(e.pos[1])
     
-    
     line, = ax.plot(tuple(elecs_xpos), tuple(elecs_ypos), 'o')
     plt.xlim(xlim)
     plt.ylim(ylim)
